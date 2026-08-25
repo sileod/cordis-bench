@@ -1,0 +1,11 @@
+{
+  "name": "cordis-bench-native-cordis",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cordis": "4.0.0-rc.7"
+  }
+}

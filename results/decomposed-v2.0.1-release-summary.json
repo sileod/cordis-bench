@@ -1,0 +1,408 @@
+{
+  "metrics": {
+    "parse_rate": "fraction of primary rows with a parsed prediction",
+    "parsed_exact_match": "whole-answer exact match conditional on parsing",
+    "per_observable_accuracy": "micro-averaged requested-position accuracy for parsed scalar_sequence rows; missing positions are errors",
+    "raw_exact_match": "whole-answer exact match over all primary rows",
+    "set_jaccard": "macro-averaged Jaccard over parsed string_set localization, guarantee, and reachability rows"
+  },
+  "models": {
+    "Gemini": {
+      "cordis_native": {
+        "by_capability": {
+          "act": {
+            "16": 1.0,
+            "2": 1.0,
+            "24": 0.75,
+            "32": 0.9166666666666666,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "localization": {
+            "16": 1.0,
+            "2": 1.0,
+            "24": 1.0,
+            "32": 1.0,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "postcondition_guarantee": {
+            "16": 1.0,
+            "2": 1.0,
+            "24": 0.8333333333333334,
+            "32": 0.8333333333333334,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "prediction": {
+            "16": 0.75,
+            "2": 1.0,
+            "24": 0.75,
+            "32": 0.5833333333333334,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "reachability": {
+            "16": 0.6666666666666666,
+            "2": 1.0,
+            "24": 0.9166666666666666,
+            "32": 0.75,
+            "4": 1.0,
+            "8": 1.0
+          }
+        },
+        "by_semantic_size": {
+          "16": {
+            "n": 60,
+            "parse_rate": 0.9166666666666666,
+            "parsed_exact_match": 0.9636363636363636,
+            "per_observable_accuracy": 0.975,
+            "raw_exact_match": 0.8833333333333333,
+            "set_jaccard": 0.9962121212121212
+          },
+          "2": {
+            "n": 120,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 1.0,
+            "per_observable_accuracy": 1.0,
+            "raw_exact_match": 1.0,
+            "set_jaccard": 1.0
+          },
+          "24": {
+            "n": 60,
+            "parse_rate": 0.95,
+            "parsed_exact_match": 0.8947368421052632,
+            "per_observable_accuracy": 0.875,
+            "raw_exact_match": 0.85,
+            "set_jaccard": 0.988562091503268
+          },
+          "32": {
+            "n": 60,
+            "parse_rate": 0.95,
+            "parsed_exact_match": 0.8596491228070176,
+            "per_observable_accuracy": 0.9114583333333334,
+            "raw_exact_match": 0.8166666666666667,
+            "set_jaccard": 0.9644736842105263
+          },
+          "4": {
+            "n": 120,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 1.0,
+            "per_observable_accuracy": 1.0,
+            "raw_exact_match": 1.0,
+            "set_jaccard": 1.0
+          },
+          "8": {
+            "n": 60,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 1.0,
+            "per_observable_accuracy": 1.0,
+            "raw_exact_match": 1.0,
+            "set_jaccard": 1.0
+          }
+        },
+        "overall": {
+          "n": 480,
+          "parse_rate": 0.9770833333333333,
+          "parsed_exact_match": 0.9658848614072495,
+          "per_observable_accuracy": 0.9309701492537313,
+          "raw_exact_match": 0.94375,
+          "set_jaccard": 0.9938726561361886
+        }
+      },
+      "formal": {
+        "by_capability": {
+          "localization": {
+            "16": 1.0,
+            "2": 0.9583333333333334,
+            "24": 1.0,
+            "32": 0.7916666666666666,
+            "4": 1.0,
+            "8": 0.9583333333333334
+          },
+          "postcondition_guarantee": {
+            "16": 0.0,
+            "2": 0.9583333333333334,
+            "24": 0.0,
+            "32": 0.0,
+            "4": 0.9166666666666666,
+            "8": 0.7916666666666666
+          },
+          "prediction": {
+            "16": 0.7916666666666666,
+            "2": 1.0,
+            "24": 0.9583333333333334,
+            "32": 0.5,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "reachability": {
+            "16": 0.0,
+            "2": 1.0,
+            "24": 0.0,
+            "32": 0.0,
+            "4": 1.0,
+            "8": 0.875
+          }
+        },
+        "by_semantic_size": {
+          "16": {
+            "n": 96,
+            "parse_rate": 0.9270833333333334,
+            "parsed_exact_match": 0.48314606741573035,
+            "per_observable_accuracy": 0.9434523809523809,
+            "raw_exact_match": 0.4479166666666667,
+            "set_jaccard": 0.8053220850289028
+          },
+          "2": {
+            "n": 96,
+            "parse_rate": 0.9895833333333334,
+            "parsed_exact_match": 0.9894736842105263,
+            "per_observable_accuracy": 1.0,
+            "raw_exact_match": 0.9791666666666666,
+            "set_jaccard": 0.9953051643192489
+          },
+          "24": {
+            "n": 96,
+            "parse_rate": 0.9270833333333334,
+            "parsed_exact_match": 0.5280898876404494,
+            "per_observable_accuracy": 0.9895833333333334,
+            "raw_exact_match": 0.4895833333333333,
+            "set_jaccard": 0.7032306420234771
+          },
+          "32": {
+            "n": 96,
+            "parse_rate": 0.8020833333333334,
+            "parsed_exact_match": 0.4025974025974026,
+            "per_observable_accuracy": 0.9122023809523809,
+            "raw_exact_match": 0.3229166666666667,
+            "set_jaccard": 0.6463006082657793
+          },
+          "4": {
+            "n": 96,
+            "parse_rate": 0.9895833333333334,
+            "parsed_exact_match": 0.9894736842105263,
+            "per_observable_accuracy": 1.0,
+            "raw_exact_match": 0.9791666666666666,
+            "set_jaccard": 0.9971830985915493
+          },
+          "8": {
+            "n": 96,
+            "parse_rate": 0.9791666666666666,
+            "parsed_exact_match": 0.925531914893617,
+            "per_observable_accuracy": 1.0,
+            "raw_exact_match": 0.90625,
+            "set_jaccard": 0.9882936507936508
+          }
+        },
+        "overall": {
+          "n": 576,
+          "parse_rate": 0.9357638888888888,
+          "parsed_exact_match": 0.7346938775510204,
+          "per_observable_accuracy": 0.95625,
+          "raw_exact_match": 0.6875,
+          "set_jaccard": 0.866114588026427
+        }
+      }
+    },
+    "Luna": {
+      "cordis_native": {
+        "by_capability": {
+          "act": {
+            "16": 0.4166666666666667,
+            "2": 0.625,
+            "24": 0.3333333333333333,
+            "32": 0.25,
+            "4": 0.9166666666666666,
+            "8": 0.5833333333333334
+          },
+          "localization": {
+            "16": 1.0,
+            "2": 1.0,
+            "24": 0.9166666666666666,
+            "32": 0.75,
+            "4": 1.0,
+            "8": 1.0
+          },
+          "postcondition_guarantee": {
+            "16": 0.16666666666666666,
+            "2": 1.0,
+            "24": 0.08333333333333333,
+            "32": 0.0,
+            "4": 0.7916666666666666,
+            "8": 0.3333333333333333
+          },
+          "prediction": {
+            "16": 0.25,
+            "2": 1.0,
+            "24": 0.16666666666666666,
+            "32": 0.08333333333333333,
+            "4": 0.9583333333333334,
+            "8": 0.5
+          },
+          "reachability": {
+            "16": 0.16666666666666666,
+            "2": 0.9583333333333334,
+            "24": 0.16666666666666666,
+            "32": 0.08333333333333333,
+            "4": 0.8333333333333334,
+            "8": 0.6666666666666666
+          }
+        },
+        "by_semantic_size": {
+          "16": {
+            "n": 60,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.4,
+            "per_observable_accuracy": 0.7916666666666666,
+            "raw_exact_match": 0.4,
+            "set_jaccard": 0.8164201539201539
+          },
+          "2": {
+            "n": 120,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.9166666666666666,
+            "per_observable_accuracy": 1.0,
+            "raw_exact_match": 0.9166666666666666,
+            "set_jaccard": 0.9930555555555556
+          },
+          "24": {
+            "n": 60,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.3333333333333333,
+            "per_observable_accuracy": 0.7430555555555556,
+            "raw_exact_match": 0.3333333333333333,
+            "set_jaccard": 0.806350430973109
+          },
+          "32": {
+            "n": 60,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.23333333333333334,
+            "per_observable_accuracy": 0.8541666666666666,
+            "raw_exact_match": 0.23333333333333334,
+            "set_jaccard": 0.7911220180795774
+          },
+          "4": {
+            "n": 120,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.9,
+            "per_observable_accuracy": 0.9791666666666666,
+            "raw_exact_match": 0.9,
+            "set_jaccard": 0.9351851851851851
+          },
+          "8": {
+            "n": 60,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.6166666666666667,
+            "per_observable_accuracy": 0.8541666666666666,
+            "raw_exact_match": 0.6166666666666667,
+            "set_jaccard": 0.8878637566137566
+          }
+        },
+        "overall": {
+          "n": 480,
+          "parse_rate": 1.0,
+          "parsed_exact_match": 0.6520833333333333,
+          "per_observable_accuracy": 0.8315217391304348,
+          "raw_exact_match": 0.6520833333333333,
+          "set_jaccard": 0.8947797301335098
+        }
+      },
+      "formal": {
+        "by_capability": {
+          "localization": {
+            "16": 0.8333333333333334,
+            "2": 1.0,
+            "24": 0.8333333333333334,
+            "32": 0.7083333333333334,
+            "4": 0.9166666666666666,
+            "8": 0.8333333333333334
+          },
+          "postcondition_guarantee": {
+            "16": 0.0,
+            "2": 0.8333333333333334,
+            "24": 0.0,
+            "32": 0.0,
+            "4": 0.375,
+            "8": 0.0
+          },
+          "prediction": {
+            "16": 0.08333333333333333,
+            "2": 0.9166666666666666,
+            "24": 0.0,
+            "32": 0.0,
+            "4": 0.8333333333333334,
+            "8": 0.25
+          },
+          "reachability": {
+            "16": 0.0,
+            "2": 0.8333333333333334,
+            "24": 0.0,
+            "32": 0.0,
+            "4": 0.3333333333333333,
+            "8": 0.0
+          }
+        },
+        "by_semantic_size": {
+          "16": {
+            "n": 96,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.22916666666666666,
+            "per_observable_accuracy": 0.7447916666666666,
+            "raw_exact_match": 0.22916666666666666,
+            "set_jaccard": 0.6058850356776155
+          },
+          "2": {
+            "n": 96,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.8958333333333334,
+            "per_observable_accuracy": 0.9375,
+            "raw_exact_match": 0.8958333333333334,
+            "set_jaccard": 0.9467592592592593
+          },
+          "24": {
+            "n": 96,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.20833333333333334,
+            "per_observable_accuracy": 0.609375,
+            "raw_exact_match": 0.20833333333333334,
+            "set_jaccard": 0.5385165633860597
+          },
+          "32": {
+            "n": 96,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.17708333333333334,
+            "per_observable_accuracy": 0.5638020833333334,
+            "raw_exact_match": 0.17708333333333334,
+            "set_jaccard": 0.5045743413027947
+          },
+          "4": {
+            "n": 96,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.6145833333333334,
+            "per_observable_accuracy": 0.9583333333333334,
+            "raw_exact_match": 0.6145833333333334,
+            "set_jaccard": 0.8241732804232804
+          },
+          "8": {
+            "n": 96,
+            "parse_rate": 1.0,
+            "parsed_exact_match": 0.2708333333333333,
+            "per_observable_accuracy": 0.859375,
+            "raw_exact_match": 0.2708333333333333,
+            "set_jaccard": 0.7480222323972323
+          }
+        },
+        "overall": {
+          "n": 576,
+          "parse_rate": 1.0,
+          "parsed_exact_match": 0.3993055555555556,
+          "per_observable_accuracy": 0.6647286821705426,
+          "raw_exact_match": 0.3993055555555556,
+          "set_jaccard": 0.6946551187410402
+        }
+      }
+    }
+  },
+  "release": "v2.0.1"
+}

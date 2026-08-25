@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.env
+.env.*
+native/cordis/node_modules/
+
+# Generated datasets and model responses are release artifacts, not source.
+data/generated/
+results/*.jsonl
+results/*.json

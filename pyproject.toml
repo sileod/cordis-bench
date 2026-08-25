@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cordis-bench"
+version = "0.16.2"
+description = "Benchmark for reasoning about component lifecycles in dynamic agent harnesses"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "litlm>=0.5.2",
+]
+
+[project.urls]
+Repository = "https://github.com/sileod/cordis-bench"
+Dataset = "https://huggingface.co/datasets/sileod/cordis-bench"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+]
+
+[project.scripts]
+cordis-bench = "cordis_bench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
