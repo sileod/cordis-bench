@@ -1,0 +1,283 @@
+{
+  "harness-doc-deepseek-r0": {
+    "reconfiguration": {
+      "16": {
+        "malformed": 4
+      },
+      "2": {
+        "duplicated_cascade": 0,
+        "exact": 1,
+        "extra_partner": 0,
+        "malformed": 7,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      },
+      "24": {
+        "malformed": 4
+      },
+      "32": {
+        "malformed": 4
+      },
+      "4": {
+        "duplicated_cascade": 0,
+        "exact": 2,
+        "extra_partner": 0,
+        "malformed": 6,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      },
+      "8": {
+        "malformed": 4
+      }
+    },
+    "schedule": {
+      "independent|16": {
+        "other": 9
+      },
+      "independent|2": {
+        "correct": 1,
+        "other": 2
+      },
+      "independent|24": {
+        "other": 23
+      },
+      "independent|32": {
+        "other": 34
+      },
+      "independent|4": {
+        "correct": 2,
+        "other": 6
+      },
+      "independent|8": {
+        "other": 10
+      },
+      "interfering|16": {
+        "other": 23
+      },
+      "interfering|2": {
+        "correct": 1,
+        "other": 4
+      },
+      "interfering|24": {
+        "other": 25
+      },
+      "interfering|32": {
+        "other": 30
+      },
+      "interfering|4": {
+        "correct": 2,
+        "other": 6
+      },
+      "interfering|8": {
+        "other": 6
+      }
+    }
+  },
+  "harness-doc-gemini": {
+    "reconfiguration": {
+      "16": {
+        "duplicated_cascade": 0,
+        "exact": 11,
+        "extra_partner": 0,
+        "malformed": 1,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      },
+      "2": {
+        "duplicated_cascade": 0,
+        "exact": 24,
+        "extra_partner": 0,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      },
+      "24": {
+        "duplicated_cascade": 0,
+        "exact": 11,
+        "extra_partner": 0,
+        "malformed": 1,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      },
+      "32": {
+        "duplicated_cascade": 0,
+        "exact": 11,
+        "extra_partner": 0,
+        "malformed": 1,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      },
+      "4": {
+        "duplicated_cascade": 0,
+        "exact": 24,
+        "extra_partner": 0,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      },
+      "8": {
+        "duplicated_cascade": 0,
+        "exact": 11,
+        "extra_partner": 0,
+        "malformed": 1,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      }
+    },
+    "schedule": {
+      "independent|16": {
+        "correct": 41,
+        "other": 1
+      },
+      "independent|2": {
+        "correct": 11
+      },
+      "independent|24": {
+        "correct": 56
+      },
+      "independent|32": {
+        "correct": 98
+      },
+      "independent|4": {
+        "correct": 24
+      },
+      "independent|8": {
+        "correct": 25
+      },
+      "interfering|16": {
+        "correct": 47,
+        "other": 7
+      },
+      "interfering|2": {
+        "correct": 13
+      },
+      "interfering|24": {
+        "correct": 87,
+        "other": 1
+      },
+      "interfering|32": {
+        "assumed_nested_restore": 4,
+        "correct": 85,
+        "ignored_cleanup": 4,
+        "spurious_leak": 1
+      },
+      "interfering|4": {
+        "correct": 24
+      },
+      "interfering|8": {
+        "correct": 23
+      }
+    }
+  },
+  "harness-doc-luna": {
+    "reconfiguration": {
+      "16": {
+        "duplicated_cascade": 0,
+        "exact": 4,
+        "extra_partner": 0,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 11
+      },
+      "2": {
+        "duplicated_cascade": 0,
+        "exact": 24,
+        "extra_partner": 0,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      },
+      "24": {
+        "duplicated_cascade": 6,
+        "exact": 3,
+        "extra_partner": 1,
+        "missed_pair": 2,
+        "unrelated": 0,
+        "wrong_member": 26
+      },
+      "32": {
+        "duplicated_cascade": 0,
+        "exact": 3,
+        "extra_partner": 0,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 27
+      },
+      "4": {
+        "duplicated_cascade": 0,
+        "exact": 22,
+        "extra_partner": 2,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      },
+      "8": {
+        "duplicated_cascade": 8,
+        "exact": 7,
+        "extra_partner": 0,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 5
+      }
+    },
+    "schedule": {
+      "independent|16": {
+        "correct": 42
+      },
+      "independent|2": {
+        "correct": 11
+      },
+      "independent|24": {
+        "correct": 54,
+        "other": 2
+      },
+      "independent|32": {
+        "correct": 98
+      },
+      "independent|4": {
+        "correct": 24
+      },
+      "independent|8": {
+        "correct": 25
+      },
+      "interfering|16": {
+        "assumed_nested_restore": 11,
+        "correct": 40,
+        "ignored_cleanup": 1,
+        "spurious_leak": 2
+      },
+      "interfering|2": {
+        "correct": 13
+      },
+      "interfering|24": {
+        "assumed_nested_restore": 15,
+        "correct": 65,
+        "ignored_cleanup": 2,
+        "other": 4,
+        "spurious_leak": 2
+      },
+      "interfering|32": {
+        "assumed_nested_restore": 22,
+        "correct": 60,
+        "ignored_cleanup": 3,
+        "other": 5,
+        "spurious_leak": 4
+      },
+      "interfering|4": {
+        "assumed_nested_restore": 1,
+        "correct": 22,
+        "spurious_leak": 1
+      },
+      "interfering|8": {
+        "assumed_nested_restore": 2,
+        "correct": 21
+      }
+    }
+  }
+}

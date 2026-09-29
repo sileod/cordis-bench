@@ -1,0 +1,156 @@
+{
+  "harness_doc": {
+    "n": 192,
+    "baseline": {
+      "cordis_schedule_prediction": 83.2,
+      "cordis_reconfiguration_set": 58.3
+    },
+    "with_doc": {
+      "cordis_schedule_prediction": 86.1,
+      "cordis_reconfiguration_set": 65.6
+    },
+    "reconfiguration_status": {
+      "baseline": {
+        "success": 56,
+        "missed_target": 28,
+        "nonminimal_success": 11,
+        "invalid_action": 1
+      },
+      "with_doc": {
+        "success": 63,
+        "missed_target": 31,
+        "nonminimal_success": 2
+      }
+    }
+  },
+  "whatif": {
+    "all": {
+      "n": 96,
+      "one_shot_success": 58.3,
+      "loop_success": 60.4,
+      "used_dry_run": 0,
+      "mean_dry_runs": 0,
+      "dry_run_verified_final": 0,
+      "mean_latency_s": 9.4,
+      "loop_status": {
+        "success": 58,
+        "missed_target": 24,
+        "nonminimal_success": 14
+      },
+      "one_shot_status": {
+        "success": 56,
+        "missed_target": 28,
+        "nonminimal_success": 11,
+        "invalid_action": 1
+      }
+    },
+    "by_size": {
+      "2": {
+        "n": 24,
+        "one_shot_success": 62.5,
+        "loop_success": 54.2,
+        "used_dry_run": 0,
+        "mean_dry_runs": 0,
+        "dry_run_verified_final": 0,
+        "mean_latency_s": 8.6,
+        "loop_status": {
+          "success": 13,
+          "nonminimal_success": 11
+        },
+        "one_shot_status": {
+          "success": 15,
+          "nonminimal_success": 9
+        }
+      },
+      "4": {
+        "n": 24,
+        "one_shot_success": 91.7,
+        "loop_success": 91.7,
+        "used_dry_run": 0,
+        "mean_dry_runs": 0,
+        "dry_run_verified_final": 0,
+        "mean_latency_s": 9.5,
+        "loop_status": {
+          "nonminimal_success": 2,
+          "success": 22
+        },
+        "one_shot_status": {
+          "success": 22,
+          "nonminimal_success": 1,
+          "missed_target": 1
+        }
+      },
+      "8": {
+        "n": 12,
+        "one_shot_success": 58.3,
+        "loop_success": 75.0,
+        "used_dry_run": 0,
+        "mean_dry_runs": 0,
+        "dry_run_verified_final": 0,
+        "mean_latency_s": 9.0,
+        "loop_status": {
+          "missed_target": 3,
+          "success": 9
+        },
+        "one_shot_status": {
+          "success": 7,
+          "nonminimal_success": 1,
+          "missed_target": 4
+        }
+      },
+      "16": {
+        "n": 12,
+        "one_shot_success": 41.7,
+        "loop_success": 41.7,
+        "used_dry_run": 0,
+        "mean_dry_runs": 0,
+        "dry_run_verified_final": 0,
+        "mean_latency_s": 10.1,
+        "loop_status": {
+          "missed_target": 6,
+          "success": 5,
+          "nonminimal_success": 1
+        },
+        "one_shot_status": {
+          "success": 5,
+          "missed_target": 6,
+          "invalid_action": 1
+        }
+      },
+      "24": {
+        "n": 12,
+        "one_shot_success": 33.3,
+        "loop_success": 58.3,
+        "used_dry_run": 0,
+        "mean_dry_runs": 0,
+        "dry_run_verified_final": 0,
+        "mean_latency_s": 11.2,
+        "loop_status": {
+          "missed_target": 5,
+          "success": 7
+        },
+        "one_shot_status": {
+          "missed_target": 8,
+          "success": 4
+        }
+      },
+      "32": {
+        "n": 12,
+        "one_shot_success": 25.0,
+        "loop_success": 16.7,
+        "used_dry_run": 0,
+        "mean_dry_runs": 0,
+        "dry_run_verified_final": 0,
+        "mean_latency_s": 8.8,
+        "loop_status": {
+          "missed_target": 10,
+          "success": 2
+        },
+        "one_shot_status": {
+          "missed_target": 9,
+          "success": 3
+        }
+      }
+    }
+  }
+}

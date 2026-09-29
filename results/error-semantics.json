@@ -328,6 +328,26 @@
       }
     }
   },
+  "effort-size16-sol-high": {
+    "reconfiguration": {
+      "16": {
+        "duplicated_cascade": 0,
+        "exact": 6,
+        "extra_partner": 0,
+        "missed_pair": 0,
+        "unrelated": 0,
+        "wrong_member": 0
+      }
+    },
+    "schedule": {
+      "independent|16": {
+        "correct": 20
+      },
+      "interfering|16": {
+        "correct": 28
+      }
+    }
+  },
   "gemini-v2.0.1-release": {
     "reconfiguration": {
       "16": {
